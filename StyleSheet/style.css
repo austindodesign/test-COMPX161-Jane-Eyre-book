@@ -1,0 +1,588 @@
+body {
+  background-image: url("img/victorian-pattern-background-large.png");
+  width: 100vw;
+  background-repeat: repeat;
+}
+
+div.content {
+  text-align: left;
+  width: 40vw;
+  background-color: #fffce8;
+  padding: 80px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+div.picturebox {
+  text-align: center;
+  width: 30vw;
+  margin: auto;
+}
+
+.pageHeader {
+  font-family: "Playfair Display", Times, serif;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 800;
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+}
+
+.bookTitle {
+  font-family: "Playfair Display", Times, serif;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 500;
+  font-size: 70px;
+  color: #ffffff;
+  text-align: center;
+  height: 50px;
+  padding: 10px;
+}
+
+#author {
+  font-family: "Playfair Display", Times, serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+p {
+  font-family: "Playfair Display", Times, serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #170f11;
+  text-indent: 1em;
+  margin-top: 0.4em;
+  margin-bottom: 0.6em;
+}
+
+.poem {
+  font-family: "Playfair Display", Times, serif;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 18px;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  text-align: center;
+  color: #170f11;
+}
+
+a {
+  text-decoration: solid;
+  color: #82247e;
+
+}
+
+a:hover {
+  color: rgb(63, 192, 252);
+  font-weight: bold;
+}
+
+a:focus {
+  color: rgb(252, 63, 242);
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Playfair Display", Times, serif;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Playfair Display", Times, serif;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+h3 {
+  text-align: left;
+  font-family: "Playfair Display", Times, serif;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+
+
+.pageNumber {
+  font-family: "Playfair Display", Times, serif;
+  font-weight: 300;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+}
+
+
+.coverImage {
+  height: 50vh;
+  width: auto;
+  margin: auto;
+}
+
+#borderimg {
+  border: 24px solid transparent;
+  padding: 2px;
+  border-image: url("img/border.png") 30 round;
+}
+
+.authorImg {
+  height: 50vh;
+  width: auto;
+}
+
+/*Nav CSS-------------------------------------------*/
+
+nav {
+  background-color: #7f557d;
+  border-radius: 10px;
+  text-align: center;
+  width: 30%;
+  padding: 2px;
+  margin: auto;
+}
+
+nav ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  padding: 20px;
+}
+
+nav li a {
+  text-decoration: none;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 1em;
+  color: white;
+  display: inline-block;
+  padding: 10px;
+}
+
+li a {
+  font-family: "Playfair Display", Times, serif;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #170f11;
+}
+
+/* stylized bullet point */
+ul {
+  list-style-image: url("img/fancyBullet.png");
+}
+
+/* CSS Grid------------------------------------- */
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "L R"
+}
+
+.leftHalf
+
+  {
+  grid-area: L;
+}
+
+.rightHalf {
+  grid-area: R;
+}
+
+.gridContainer3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "A B C"
+}
+
+.A
+
+  {
+  grid-area: A;
+}
+
+.B {
+  grid-area: B;
+}
+
+.C {
+  grid-area: C;
+}
+
+
+
+/*CSS SPAN TAG------------------------------------*/
+span#keyword {
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  font-size: 15px;
+  color: rgb(63, 192, 252);
+}
+
+span.annotation {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: rgb(14, 4, 42);
+}
+
+
+/*CSS RESPONSIVE IMAGES------------------------------------*/
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+}
+
+/* Small phones*/
+@media screen and (max-width: 300px) {
+  img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Narrow windows on a monitor */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Stretched browser */
+@media screen and (min-width: 1025px) {
+  img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Styling for table */
+table,
+th,
+td {
+  border: 1px solid;
+  text-align: left;
+}
+
+tr:hover {
+  background-color: rgb(100, 206, 255);
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th {
+  background-color: #ff3f9c;
+  color: white;
+}
+
+/*Side Menu */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #7f557d;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #0ae6ff;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+}
+
+.sidenav a {
+  font-size: 18px;
+}
+
+
+#sideMenuButton {
+  width: 60px;
+  position: fixed;
+  left: 10vw;
+}
+
+#nextButton,
+#prevButton,
+#startButton {
+  height: 50px;
+  width: auto;
+  position: fixed;
+}
+
+#nextButton {
+  bottom: 2vh;
+  right: 30vw;
+}
+
+#prevButton {
+  bottom: 2vh;
+  left: 30vw;
+}
+
+#startButton {
+  right: 10vw;
+}
+
+/* #quizButton {
+  height: 50px;
+  width: auto;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+#quizButton:hover {
+  filter: brightness(150%);
+} */
+
+
+/* Interactive timeline styling---------------------------- */
+/* * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #222;
+  font-family: Georgia, serif;
+  color: #fff;
+  font-size: 14px;
+}
+*/
+a {
+  text-decoration: none;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+}
+
+/* 
+a:hover,
+a.selected {
+  color: #ffcc00;
+} */
+
+
+h4 {
+  text-align: left;
+  font-family: "Playfair Display", Times, serif;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+
+.sociales {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#timeline {
+  width: 600px;
+  height: 300px;
+  overflow: hidden;
+  overflow-y: scroll;
+  margin: 100px auto;
+  position: relative;
+  /* background: url('../images/dot.gif') left 45px repeat-x; */
+}
+
+#dates {
+  width: 800px;
+  height: 60px;
+  overflow: hidden;
+}
+
+#dates li {
+  list-style: none;
+  float: left;
+  width: 100px;
+  height: 50px;
+  font-size: 22px;
+  font-style: normal;
+  text-align: center;
+  padding: 2px;
+  background-color: #7F557D;
+}
+
+#dates a {
+  line-height: 30px;
+  padding-bottom: 10px;
+  font-style: normal;
+  color: #ffffff;
+}
+
+#dates .selected {
+  font-size: 30px;
+  padding: 2px;
+  color: #ffcc00;
+}
+
+#issues {
+  width: 550px;
+  margin: 2%;
+  padding: 2%;
+  overflow: hidden;
+}
+
+#issues li {
+  width: 500px;
+  list-style: none;
+  float: left;
+}
+
+#issues li.selected img {
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+
+#issues li img {
+  float: left;
+  margin: 10px 30px 10px 50px;
+  background: transparent;
+}
+
+/* filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#00FFFFFF);
+  IE 6 & 7 
+  
+   zoom: 1; 
+   -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-transform: scale(0.7, 0.7);
+  -moz-transform: scale(0.7, 0.7);
+  -o-transform: scale(0.7, 0.7);
+  -ms-transform: scale(0.7, 0.7);
+  transform: scale(0.7, 0.7);
+ */
+
+/* #issues li h4 {
+  color: #ffcc00;
+  font-size: 48px;
+  margin: 20px 0;
+  text-shadow: #000 1px 1px 2px;
+  text-align: left;
+  padding-left: 70px;
+ */
+
+#issues li p {
+  font-size: 18px;
+  margin-top: 0.1em;
+}
+
+#grad_left,
+#grad_right {
+  width: 100px;
+  height: 350px;
+  position: absolute;
+  top: 0;
+}
+
+
+#next,
+#prev {
+  position: absolute;
+  top: 0;
+  font-size: 70px;
+  top: 170px;
+  width: 22px;
+  height: 38px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+#next:hover,
+#prev:hover {
+  background-position: 0 -76px;
+}
+
+
+#next.disabled,
+#prev.disabled {
+  opacity: 0;
+}
